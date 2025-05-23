@@ -1,4 +1,4 @@
-# mange-generation
+# PlotSketch
 
 ## Project setup
 ```
