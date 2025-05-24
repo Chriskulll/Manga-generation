@@ -1,7 +1,9 @@
 <script setup>
 import { ref } from 'vue'
+import { InitorREgenerate } from '@/composables/useActiveMode'
 import ComicFormInit from "@/components/ComicFormInit.vue";
 import PictureZone from "@/components/PictureZone.vue";
+import ComicFormRegenerate from "@/components/ComicFormRegenerate.vue";
 // 管理 activeMode
 const activeMode = ref(null)
 
@@ -13,7 +15,10 @@ function handleGenerateComic() {
 <template>
   <div class="content">
     <div class="left-content">
-      <ComicFormInit @generate-comic="handleGenerateComic"></ComicFormInit>
+      <component
+          :is="InitorREgenerate ? ComicFormRegenerate : ComicFormInit"
+          @generate-comic="handleGenerateComic">
+      </component>
     </div>
     <div class="right-content">
       <PictureZone

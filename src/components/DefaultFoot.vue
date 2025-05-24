@@ -1,10 +1,14 @@
-<script setup lang="ts">
+<script setup>
+import { InitorREgenerate } from '@/composables/useActiveMode'
 
+function regenerateComic() {
+  InitorREgenerate.value =true
+}
 </script>
 
 <template>
-  <el-button class="button1">导出漫画</el-button>
-  <el-button class="button2">继续生成</el-button>
+  <el-button class="button1" @click="handleDownload('png')">导出漫画</el-button>
+  <el-button class="button2" @click="regenerateComic">继续生成</el-button>
 </template>
 
 <style scoped>
