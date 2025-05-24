@@ -189,7 +189,7 @@
 <style scoped>
 /* 整个背景容器 */
 .background {
-  margin:-10px;
+  margin:0px;
   width: 100vw;
   height: 100vh;
   background-image: url("../assets/static/首页.png");

@@ -25,7 +25,7 @@ const routes = [
                 component: () => import("@/Views/COMICView.vue"),
             },
             {
-                path: "plot_out",
+                path: "/index/plot_out",
                 name: "剧情灵感",
                 hidden: false,
                 component: () => import("@/Views/PLOTView.vue"),

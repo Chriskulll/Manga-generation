@@ -12,4 +12,9 @@ export default {
 </script>
 
 <style>
+html,body,#app {
+  margin: 0px;
+  padding: 0px;
+  height:100vh;
+}
 </style>
