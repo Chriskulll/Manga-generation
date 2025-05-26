@@ -41,7 +41,7 @@ const selectPlot = (index) => {
     </div>
   </div>
   <div class="foot-zone">
-    <el-button class="button1" @click="goToComicOut">导出漫画</el-button>
+    <el-button class="button1" @click="goToComicOut">生成漫画</el-button>
   </div>
 </template>
 
